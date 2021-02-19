@@ -1,0 +1,228 @@
+﻿html {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: hsl(179deg 26% 57%);
+    background-image: linear-gradient(to bottom, #aaccd6, #0f7e9b);
+    background: url("https://www.alexfinch.org/res/images/test.png");
+
+}
+
+.dividerline {
+    width: 100%;
+    height: 2px;
+    background-color: #979c9e;
+    margin-bottom: 50px;
+}
+
+.nav-box {
+    color: white;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    background-color: rgb(51, 51, 51);
+    position: relative;
+    border-radius: 10px;
+    border: 4px solid rgb(51, 51, 51);
+    padding: 10px;
+    font-family: Roboto;
+}
+
+.subheader {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.main-box {
+    color: white;
+    width: 40%;
+    height: 70%;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    background-color: rgb(51, 51, 51);
+    position: relative;
+    border: 9px solid rgb(51, 51, 51);
+    padding: 10px;
+    margin-left: 20px;
+    font-family: Roboto;
+    overflow: auto;
+    border-radius: 10px;
+}
+
+    .main-box::-webkit-scrollbar {
+        width: 0.8em;
+        border-radius: 5px;
+    }
+ 
+    .main-box::-webkit-scrollbar-track {
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    }
+    
+    .main-box::-webkit-scrollbar-thumb {
+        border-radius: 15px;
+        background-color: darkgrey;
+    }
+
+
+h1 {
+    margin: 0;
+    font-size:50px;
+    font-weight: 300;
+    display: inline;
+}
+
+.mediumtext {
+    font-weight: 300;
+    font-size: 30px;
+
+}
+
+.smalltext {
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 50px;
+    margin-left: 20px;
+    color: white;
+}
+
+.main-content {
+    word-wrap: break-word;
+}
+
+.styled_btn_dark {
+    outline: none;
+    cursor: pointer;
+    background-color: #161616;
+    color: white;
+    border: none;
+    font-family: Roboto;
+    font-weight: 100;
+    font-size: 20px;
+    border: 2px solid white;
+    transition: all ease 0.5s;
+}
+
+.styled_btn_dark:hover {
+    color: #14282f;
+    background-color: white;
+    border: 2px solid #161616;
+}
+
+.center {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    display: inline;
+    float:right;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.portfolio-view {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-image {
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.centered-image {
+    height: 100%;
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.portfolio-card {
+    border-radius: 15px;
+    cursor: pointer;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+    width: 350px;
+    height: 300px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    background-color: #161616;
+}
+
+.portfolio-title {
+    padding-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+.portfolio-title-text {
+    font-size: 20px;
+    font-weight: 200;
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio-title-text:focus {
+    color: white;
+}
+
+.socialicon {
+
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+#cv {
+    width: 100%;
+
+
+}
+
+.headerdivider {
+    text-align: center;
+    font-weight: 500;
+    font-size: 30px;
+}

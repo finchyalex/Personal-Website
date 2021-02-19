@@ -1,0 +1,391 @@
+﻿
+:root {
+    --main-color: white;
+    --secondary-color: #0e9aa7;
+    --main-text-color: #0e9aa7;
+    --secondary-text-color: white;
+    --error-color: rgb(255, 105, 97);
+}
+
+
+#circle {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+body {
+    background-color: var(--main-color);
+}
+
+#centercontainer {
+    position: absolute;
+    width: 700px;
+    height: 600px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 2px black solid;
+}
+
+#contentheader {
+    font-size: 40px;
+    margin: 0;
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#contentbox {
+    font-family: 'Montserrat';
+    width: 400px;
+    height: 500px;
+    float: left;
+    color: var(--main-text-color);
+}
+
+
+
+.usercontentbox {
+    font-family: 'Montserrat';
+    width: 100%;
+    height: 100%;
+    font-weight: 400;
+    color: var(--main-text-color);
+}
+
+.logincontent {
+    width: 300px;
+    height: 600px;
+    text-align: center;
+    outline: none;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.registertab {
+    display: none;
+    width: 300px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.formicon_big {
+    font-size: 40px;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.formicon_med {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#reg_profile_display {
+    border-radius: 200px;
+    width: 160px;
+    height: 160px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    
+}
+
+#reg_profile_display:hover {
+    opacity: 0.7;
+}
+
+#upload_text {
+    display: none;
+    position: absolute;
+    background: grey;
+    color: white;
+    opacity: 0.8;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+
+.registercontent {
+    text-align: left;
+}
+
+#registerform {
+    text-align: center;
+    margin:auto;
+}
+
+h1 {
+    font-weight: 400;
+    text-align: center;
+    color: black;
+}
+
+.registerinput {
+    background-color: #F5F5F5;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: #708090;
+    text-align: center;
+    border: none;
+    display: block;
+    border-radius: 10px;
+    width: 272px;
+    height: 40px;
+    margin: auto;
+    padding: 0;
+    outline: none;
+    border-bottom: 2px solid var(--main-text-color);
+}
+
+
+
+
+.logininput {
+    background-color: #F5F5F5;
+    font-size: 20px;
+    font-family: 'Montserrat';
+    color: #708090;
+    text-align: center;
+    border: none;
+    display: block;
+    border-radius: 10px;
+    width: 272px;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    outline: none;
+    border-bottom: 2px solid var(--main-text-color);
+}
+
+    .textinput:focus, .textinput:active {
+        outline: 0;
+    }
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #D3D3D3;
+}
+
+::-moz-placeholder { /* Firefox 19+ */
+    color: #D3D3D3;
+}
+
+:-ms-input-placeholder { /* IE 10+ */
+    color: #D3D3D3;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: #D3D3D3;
+}
+
+#logo {
+    margin-top: 20px;
+    width: 136px;
+}
+
+.styledbutton {
+    outline: none;
+    margin: auto;
+    color: var(--secondary-text-color);
+    height: 40px;
+    width: 272px;
+    display: block;
+    border: none;
+    /*background-image: linear-gradient(to right,var(--secondary-color),#FFBF69);*/
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    border-color: white;
+    border-width: 2px;
+    border-style: solid;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    margin-top: 50px;
+    margin-bottom: 25px;
+    font-weight: 600;
+    cursor:pointer;
+    transition: all ease-out 2s;
+}
+
+.continuebutton {
+    transition: all ease 0.5s;
+}
+
+
+
+#nameinfo {
+    display: inline;
+}
+
+.terms {
+    width: 300px;
+    margin: auto;
+}
+
+.termsbox {
+    outline: 1px solid var(--main-text-color);
+    padding: 5px;
+    font-family: 'Montserrat';
+    height: 400px;
+    overflow: auto;
+    margin: auto;
+}
+
+
+.textlink {
+    color: var(--main-text-color);
+    margin-bottom: 50px;
+}
+
+
+
+
+.profileinformation {
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+
+#message {
+    color: var(--main-text-color);
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+#mobilecontent {
+    display: block;
+}
+
+#desktopcontent {
+    display: none;
+}
+
+.terms {
+    width: 90%;
+}
+
+.profileinformation {
+    width: 90%;
+    display: none;
+}
+
+.formlabel {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.formheader {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 50px;
+    font-weight: 600;
+}
+
+.continuebutton:disabled {
+    background-color: darkgray;
+    cursor:  initial;
+}
+
+
+.textinput {
+    font-size: 20px;
+}
+
+.errormessage {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: var(--error-color);
+    visibility: hidden;
+    text-shadow: #000 0px 0px 1px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.formresponse {
+    visibility: hidden;
+}
+
+.loadinggif {
+    display: inline-block;
+    width: 30px;
+}
+
+#passwordChecklist {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.checkbox {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    outline: 1px solid #0e9aa7;
+    margin-right: 10px;
+}
+
+.line p {
+    
+    display: inline;
+    vertical-align: middle;
+    line-height: 20px;
+    margin-left: 10%;
+}
+
+.line {
+    font-weight: 500;
+    text-align: left;
+    display: inline-block;
+    margin-left: 50px;
+}
+
+#passwordTitle {
+    font-weight: 600;
+}
+
+.logoheader {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 25px;
+    color: var(--main-text-color);
+    font-weight: 900;
+    font-size: 50px;
+}
+
+@media screen and (max-width: 300px) {
+    #mobilecontent {
+        display: block;
+    }
+
+    #desktopcontent {
+        display: none;
+    }
+
+
+
+    .textinput, .loginbutton {
+        width: 80%;
+    }
+}

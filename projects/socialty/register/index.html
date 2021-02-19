@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Party.app - Register</title>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,500,600,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://www.alexfinch.org/projects/socialty/res/css/index.css" rel="stylesheet" />
+    
+
+</head>
+<body>
+    <div class="usercontentbox">
+        <div class="registercontent">
+            <div class="terms">
+                <p> Hi, Welcome to Party.app</p>
+                <p> First, let's get the boring stuff covered, please read and agree to our terms of service </p>
+                <div class="termsbox">
+                    <p> TERMS AND CONDITIONS - Party.app 2019 <br> <br>To use the Party.app app, you must read and accept our terms and conditions, and service agreement, failing to follow these terms of service may result in immediate suspension from our services. <br><br>INTELLECTUAL PROPERTY <br><br>Party.app all it’s logos and visual media are property of the Party.app app and so forth shall not be used unless in compliance with copyright laws. Official media from the Party.app app should not be used in anyway unless it meets the following criteria. The visual media should only be used if used in a non-commercial way e.g not to make profit, media must be given a clear disclaimer that it is the property of the Party.app app as such is not property of the individual geting the content. <br><br>TERMINATION OF SERVICES <br><br>Party.app reserves the right to terminate accounts without notice if the terms and conditions are broken or at the app management team’s discretion. If an account is terminated all information will be deleted within 48 hours of the account’s termination. If an account is terminated a user may recreate an account as long as they have not been specifically told they are barred from the services of this app. <br><br> GOVERNING LAW <br><br>Party.app operates in the United Kingdom as such we are in full compliance with UK law including GDPR,</p></p>
+                </div>
+                <input type="checkbox"> I have read and accept the Terms and Conditions
+                <button class="styledbutton" onclick="startprofile()">Get Started</button>
+                <a href="../login/" class="textlink"> Back to Sign in </a>
+            </div>
+            <div class="profileinformation">
+                <h1 class="logoheader">Socialty</h1>
+                <form action="#" method="POST" id="registerform">
+                    <p class="formheader"> Registration </p>
+                    <p class="formlabel"> Personal Information </p>
+                    <input type="text" name="firstname" class="registerinput" placeholder="First Name">
+                    <p id="firstnameerror" class="errormessage"> First Name - Error </p>
+                    <input type="text" name="surname" class="registerinput" placeholder="Surname">
+                    <p id="surnameerror" class="errormessage"> Surname - Error </p>
+                    <input type="text" name="dob" oninput="FormatDOB(this)" class="registerinput" placeholder="Date of Birth">
+                    <p id="doberror" class="errormessage"> DOB - Error </p>
+                    <p class="formlabel"> Contact Information </p>
+                    <input type="email" name="email" class="registerinput" placeholder="Email">
+                    <p id="emailerror" class="errormessage"> Email - Error </p>
+                    <p class="formlabel"> Login Information </p>
+                    <input type="text" name="username" class="registerinput" id="regusername" placeholder="Username">
+                    <p id="usernameerror" class="errormessage"> Username - Error </p>
+                    <input type="password" name="password" class="registerinput passwordinput" placeholder="Password">
+                    <p id="passworderror" class="errormessage"> Password - Error </p>
+                    <input type="password" name="confirmpassword" class="registerinput passwordinput" placeholder="Confirm Password">
+                    <p id="confirmpassworderror" class="errormessage"> Confirmed Password - Error </p>
+                    <div id="passwordChecklist">
+                        <p id="passwordTitle">Password must include the following: </p>
+                        <div class="line"><div class="checkbox" id="capital"></div><p>A capital letter</p></div>
+                        <div class="line"><div class="checkbox" id="number"></div><p>A number</p></div>
+                        <div class="line"><div class="checkbox" id="length"></div><p>Minimum 8 characters</p></div>
+                        <div class="line"><div class="checkbox" id="character"></div><p>A special character</p></div>
+                        <div class="line"><div class="checkbox" id="match"></div><p>Passwords match</p></div>
+                    </div>
+                    <button class="styledbutton" name="register">Register</button>
+                    <a href="../login/" class="textlink"> Back to Sign in </a>
+                    <input name="registeraccount" id="registeraction" disabled type="hidden">
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../res/js/main.js"></script>
+    <script src="../res/js/postqueuing.js"></script>
+</body>
+</html>

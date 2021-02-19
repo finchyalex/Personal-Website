@@ -1,0 +1,265 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>UK to USA - Start your Journey</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css?family=B612" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:900|Work+Sans:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400&display=swap" rel="stylesheet">
+    <!-- JavaScript and JQuery -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <script>
+        var Landing_Viewed = localStorage.getItem('Viewed_Landing');
+        if (Landing_Viewed == 'true') {
+            window.location.href = ("home.html");
+        }
+
+        function LoadPage() {
+            TextChange();
+            BackgroundChange();
+        }
+
+        function LeaveLanding() {
+            $("#landingpage").fadeOut(function () {
+
+                localStorage.setItem('Viewed_Landing', 'true');
+                window.location.href = ("home.html");
+
+            });
+        }
+
+
+
+        function BackgroundChange() {
+
+
+            setTimeout(function () {
+                setBackground("ChicagoImage", "PrincetonImage");
+            }, 5000);
+
+            setTimeout(function () {
+                setBackground("PrincetonImage", "DukeImage");
+            }, 10000);
+
+            setTimeout(function () {
+                setBackground("DukeImage", "MITImage");
+            }, 15000);
+
+            setTimeout(function () {
+                setBackground("MITImage", "ChicagoImage");
+            }, 20000);
+
+
+            setTimeout(BackgroundChange, 20000);
+        }
+
+        function setBackground(LastImage, NewImage) {
+            $("#" + LastImage).fadeOut(function () {
+                $(this).css('opacity', '0');
+                $("#" + NewImage).css('opacity', '0.75');
+                $("#" + NewImage).fadeIn();
+            });
+        }
+
+
+        function TextChange() {
+            setTimeout(function () {
+                setText("Don't know where to start?");
+            }, 4000);
+            setTimeout(function () {
+                setText("Let us help you through the process");
+            }, 6000);
+            setTimeout(function () {
+                setText("Want to apply to top U.S institutions?");
+            }, 11000);
+
+            setTimeout(TextChange, 11000);
+        }
+
+        function setText(Text) {
+            $("#mainheader").fadeOut(function () {
+                $(this).text(Text).fadeIn();
+            });
+        }
+
+
+
+
+    </script>
+
+    <style>
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            height: 100%;
+            width: 100%;
+        }
+
+        .wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .bt1 {
+            font-weight: 300;
+            font-size: 20px;
+            background-color: rgba(0,0,0,.0);
+            border-style: solid;
+            border-color: white;
+            border-width: 3px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+        }
+
+            .bt1:hover {
+                color: #43cea2;
+                background-color: white;
+                -webkit-animation-name: buttongradient;
+                -webkit-animation-duration 3s;
+                animation-name: buttongradient;
+                animation-duration: 3s;
+                animation-iteration-count: infinite;
+            }
+
+        .centerbutton {
+            position: absolute;
+            top: 50%;
+        }
+
+        #mainheader {
+            position: absolute;
+            top: 10%;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            font-size: 50px;
+            font-size: 3vw;
+            font-weight: 200;
+        }
+
+        #landingpage {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(-60deg, #43cea2, #185a9d);
+        }
+
+        .backgroundimage {
+            width: 100%;
+            height: 100%;
+            background-position-x: center;
+            background-position-y: center;
+            background-size: cover;
+            background-repeat-x: no-repeat;
+            background-repeat-y: no-repeat;
+            background-attachment: fixed;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: initial;
+            opacity: 0.6;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        #PrincetonImage {
+            background-image: url('../../Images/Princeton.jpg');
+            opacity: 0;
+            display: none;
+        }
+
+        #DukeImage {
+            background-image: url('../../Images/Duke.jpg');
+            opacity: 0;
+            display: none;
+        }
+
+        #MITImage {
+            background-image: url('../../Images/MIT.jpg');
+            opacity: 0;
+            display: none;
+        }
+
+        #ChicagoImage {
+            background-image: url('../../Images/Chicago.jpg');
+            opacity: 0.75;
+        }
+
+
+
+        @-webkit-keyframes buttongradient {
+            0% {
+                color: #43cea2;
+            }
+
+            50% {
+                color: #185a9d;
+            }
+
+            100% {
+                color: #43cea2;
+            }
+        }
+
+        @keyframes buttongradient {
+            0% {
+                color: #43cea2;
+            }
+
+            50% {
+                color: #185a9d;
+            }
+
+            100% {
+                color: #43cea2;
+            }
+        }
+    </style>
+
+
+
+
+
+</head>
+  <body onload="LoadPage();">
+
+  <div id="landingpage">
+  	<div id="ChicagoImage" class="backgroundimage">
+	</div>
+	<div id="PrincetonImage" class="backgroundimage">
+	</div>
+	<div id="DukeImage" class="backgroundimage">
+	</div>
+	<div id="MITImage" class="backgroundimage">
+	</div>
+		<div class="wrapper">
+		  <h1 id="mainheader">Want to apply to top U.S institutions?</h1>
+		  <button onclick="LeaveLanding();" class="centerbutton bt1">START YOUR JOURNEY</button>
+		</div>
+  </div>
+
+
+  </body>
+</html>

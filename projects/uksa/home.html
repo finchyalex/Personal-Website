@@ -1,0 +1,574 @@
+﻿<html>
+
+<head>
+
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Homepage</title>
+    <meta name="description" content="Applying for American Universities">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,500&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/3c73edcc97.js"></script>
+    <script type="text/javascript" src="Javascript-1-8-5.js"></script>
+
+    <style>
+
+        html {
+            scroll-behavior: smooth;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #test_color1 {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #3b9ad6;
+        }
+
+        #test_color2 {
+            width: 100%;
+            height: 100%;
+            background-color: #50a5da;
+        }
+
+        #test_color3 {
+            width: 100%;
+            height: 100%;
+            background-color: lightskyblue;
+        }
+
+        #test_color4 {
+            width: 100%;
+            height: 100%;
+            background-color: darkcyan;
+        }
+
+        #test_color5 {
+            width: 100%;
+            height: 100%;
+            background-color: darkslategrey;
+        }
+
+
+  
+
+        #side_bar_container {
+            margin-right: 20px;
+            position: fixed;
+            right: 0;
+            height: 50%;
+            top: 50%;
+            transform: translate(0, -50%);
+            float: right;
+        }
+
+        .button {
+            cursor: pointer;
+            margin: auto;
+            width: 35px;
+            height: 35px;
+            border-radius: 100px;
+            background-color: white;
+            transition: all 1500ms ease;
+            float: right;
+        }
+
+        .divider {
+            margin: auto;
+            margin-top: 0;
+            height: 90px;
+            background-color: white;
+            width: 8px;
+            transition: all 1500ms ease;
+            margin-right: 13px;
+        }
+
+        #progress_blob1 {
+            background-color: #7dffba;
+        }
+
+        #divider1 {
+            background-color: #7dffba;
+        }
+
+        #main_logo {
+            margin-left: 25px;
+            width: 200px;
+            margin-top: 30px;
+        }
+
+        #logo_container {
+            margin: 0;
+            border-radius: 0px 0px 60px 0px;
+            background-color: white;
+            padding-right: 35px;
+            padding-bottom: 30px;
+            width: 225px;
+            float: left;
+            position: fixed;
+        }
+
+
+        .scroll_text {
+            color: white;
+            font-weight: 100;
+            font-family: Roboto;
+            font-size: 90px;
+        }
+
+        #scroll_text_container {
+            float: left;
+            margin-top: 10%;
+            margin-left: 5%;
+            border-radius: 20px;
+            background-color: #7abbe3;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        #curved_edge {
+            background-color: #86cffc;
+            float: left;
+            width: 10%;
+            height: 10%;
+            z-index: 10;
+        }
+
+        #background_color {
+            background-color: #3b9ad6;
+            float: left;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px 0px 0px 0px;
+        }
+
+        .label_text {
+            float: left;
+            font-family: Roboto;
+            color: white;
+            margin-top: 0;
+            margin-right: 10px;
+            margin-top: 5px;
+            width: 150px;
+            text-align: right;
+        }
+
+        #sentence_starter {
+            margin: 0;
+            float: left;
+        }
+
+        #hidden_top_word {
+            position: absolute;
+            margin: 0;
+            margin-left: 333px;
+            opacity: 0;
+            transition: all 0.4s;
+            transform: translateY(-110px);
+        }
+
+        #top_word {
+            width: 400px;
+            margin: 0;
+            margin-left: 333px;
+            transition: all 0.4s;
+        }
+
+        #middle_word {
+            width: 400px;
+            margin: 0;
+            margin-left: 333px;
+            transition: all 0.4s;
+            color: #7dffba;
+        }
+
+        #bottom_word {
+            width: 400px;
+            margin: 0;
+            margin-left: 333px;
+            transition: all 0.4s;
+        }
+
+        #hidden_bottom_word {
+            width: 400px;
+            position: absolute;
+            margin: 0;
+            margin-left: 333px;
+            transition: all 0.4s;
+            opacity: 0;
+        }
+
+        #dream_school {
+            float: right;
+            margin: 0;
+            width: 800px;
+        }
+
+        .header_text {
+            color: white;
+            font-family: Roboto;
+            font-size: 70px;
+            margin: 0;
+            font-weight: 100;
+        }
+
+        #main_header {
+            float: right;
+            border-radius: 0px 0px 0px 60px;
+            background-color: #7abbe3;
+            padding-left: 35px;
+            padding-top: 10px;
+            padding-bottom: 30px;
+            padding-right: 35px;
+        }
+
+        #login {
+            float: right;
+
+        }
+
+        #top_bar {
+            height: 120px;
+        }
+
+        #login_button {
+            width: 100%;
+            border-radius: 0px 0px 0px 20px;
+            font-weight: 100;
+            padding: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: white;
+            color: white;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+            -webkit-transition: 0.5s;
+            transition: 0.5s;
+            background-color: #7abbe3;
+            cursor: pointer;
+            border: none;
+        }
+
+
+    </style>
+
+    <script>
+
+        CurrentScrollPage = 0;
+        CurrentTextScroll = 0;
+        ScrollTextTime = 0;
+        
+
+        function TextScroll() {
+            if (CurrentTextScroll == 0) {
+                document.getElementById('middle_word').style.color = "white";
+
+                document.getElementById('top_word').style.transform = "translateY(110px)"; //Top word is moved to middle
+                document.getElementById('top_word').style.color = "#7dffba";
+                CurrentMiddleText = document.getElementById('top_word');
+
+                document.getElementById('hidden_top_word').style.opacity = "1"; //Hidden top word is made visable and moved down
+                document.getElementById('hidden_top_word').style.transform = "translateY(0)";
+
+                document.getElementById('middle_word').style.transform = "translateY(110px)"; //middle word is moved down
+
+                document.getElementById('bottom_word').style.transform = "translateY(110px)"; //bottom word is made invisble and moved down
+                document.getElementById('bottom_word').style.opacity = "0";
+
+                document.getElementById('hidden_bottom_word').style.transform = "translateY(-440px)"; //the hidden bottom word is made invisible and moved down
+                document.getElementById('hidden_bottom_word').style.opacity = "0";
+
+                CurrentTextScroll = CurrentTextScroll + 1;
+            } else if (CurrentTextScroll == 1) {
+
+                document.getElementById('top_word').style.color = "white";
+
+                document.getElementById('top_word').style.transform = "translateY(220px)";
+
+                CurrentMiddleText = document.getElementById('hidden_top_word');
+                document.getElementById('hidden_top_word').style.color = "#7dffba";
+                document.getElementById('hidden_top_word').style.transform = "translateY(110px)";
+
+                document.getElementById('hidden_bottom_word').style.transform = "translateY(-330px)";
+                document.getElementById('hidden_bottom_word').style.opacity = "1";
+
+                document.getElementById('middle_word').style.transform = "translateY(220px)";
+                document.getElementById('middle_word').style.opacity = "0";
+
+                document.getElementById('bottom_word').style.transform = "translateY(-330px)";
+                if (ScrollTextTime == 0) {
+                    document.getElementById('bottom_word').innerText = "Stanford";
+                } else {
+                    document.getElementById('bottom_word').innerText = "Princeton";
+                }
+                
+
+                CurrentTextScroll = CurrentTextScroll + 1;
+
+            } else if (CurrentTextScroll == 2) {
+
+                document.getElementById('middle_word').style.transform = "translateY(-220px)";
+                if (ScrollTextTime == 0) {
+                    document.getElementById('middle_word').innerText = "Cornell";
+                } else {
+                    document.getElementById('middle_word').innerText = "Duke";
+                }
+
+                document.getElementById('hidden_top_word').style.color = "white";
+
+                document.getElementById('bottom_word').style.transform = "translateY(-220px)";
+                document.getElementById('bottom_word').style.opacity = "1";
+
+                document.getElementById('hidden_bottom_word').style.transform = "translateY(-220px)";
+                document.getElementById('hidden_bottom_word').style.color = "#7dffba";
+                CurrentMiddleText = document.getElementById('hidden_bottom_word');
+
+                document.getElementById('hidden_top_word').style.transform = "translateY(220px)";
+
+                document.getElementById('top_word').style.transform = "translateY(330px)";
+                document.getElementById('top_word').style.opacity = "0";
+
+                CurrentTextScroll = CurrentTextScroll + 1;
+            } else if (CurrentTextScroll == 3) {
+
+                document.getElementById('hidden_bottom_word').style.color = "white";
+
+                document.getElementById('middle_word').style.transform = "translateY(-110px)";
+                document.getElementById('middle_word').style.opacity = "1";
+
+                document.getElementById('bottom_word').style.transform = "translateY(-110px)";
+                document.getElementById('bottom_word').style.color = "#7dffba";
+
+                CurrentMiddleText = document.getElementById('bottom_word');
+
+                document.getElementById('hidden_bottom_word').style.transform = "translateY(-110px)";
+
+                document.getElementById('hidden_top_word').style.transform = "translateY(330px)";
+                document.getElementById('hidden_top_word').style.opacity = "0";
+
+                document.getElementById('top_word').style.transform = "translateY(-110px)";
+
+                CurrentTextScroll = CurrentTextScroll + 1;
+            } else if (CurrentTextScroll == 4) {
+
+                document.getElementById('bottom_word').style.color = "white";
+
+                document.getElementById('top_word').style.transform = "translateY(0px)";
+                document.getElementById('top_word').style.opacity  = "1";
+
+                document.getElementById('middle_word').style.transform = "translateY(0px)";
+                document.getElementById('middle_word').style.color = "#7dffba";
+
+                CurrentMiddleText = document.getElementById('middle_word');
+
+                document.getElementById('bottom_word').style.transform = "translateY(0px)";
+
+                document.getElementById('hidden_bottom_word').style.transform = "translateY(0px)";
+                document.getElementById('hidden_bottom_word').style.opacity = "0";
+
+                document.getElementById('hidden_top_word').style.transform = "translateY(-110px)";
+
+                CurrentTextScroll = 0;
+                if (ScrollTextTime == 0) {
+                    ScrollTextTime = 1;
+                } else {
+                    ScrollTextTime = 0;
+                }
+            }
+
+
+        }
+
+        function prepareScroll() {
+            ScrollToPage(0);
+            CurrentScrollPage = 0;
+            document.addEventListener("wheel", scrollFunction);
+        }
+        
+
+        function scrollFunction(event) {
+            if (event.deltaY < 0) {
+                if (CurrentScrollPage > 0) ScrollToPage(CurrentScrollPage - 1);
+            } else {
+                if (CurrentScrollPage < 4) ScrollToPage(CurrentScrollPage + 1);
+                
+            }
+
+            console.log(event.deltaY);
+        }
+
+        function ScrollToPage(ScrollPage) {
+            for (i = 1; i < ScrollPage + 2; i++) {
+                if (i < 5) {
+                    document.getElementById('divider' + String(i)).style.background = "#7dffba"
+                }
+
+                document.getElementById('progress_blob' + String(i)).style.background = "#7dffba"
+            }
+
+            for (i = ScrollPage + 2; i < 6; i++) {
+                if (i < 5) {
+                    document.getElementById('divider' + String(i)).style.background = "white"
+                }
+
+                document.getElementById('progress_blob' + String(i)).style.background = "white"
+            }
+            CurrentScrollPage = ScrollPage;
+            window.scrollTo(0, ScrollPage * innerHeight);
+        }
+
+        function StartScrollingText() {
+            ScrollTextTimer = setInterval(TextScroll, 1000);
+            CurrentMiddleText = document.getElementById('middle_word');
+            ScrollBox = document.getElementById("scroll_text_container");
+            ScrollBox.addEventListener("mouseenter", function (event) {
+
+
+                clearInterval(ScrollTextTimer);
+
+                ScrollTextTimer = setInterval(TextScroll, 300);
+
+            }, false);
+
+            ScrollBox = document.getElementById("scroll_text_container");
+            ScrollBox.addEventListener("mouseleave", function (event) {
+
+                clearInterval(ScrollTextTimer);
+
+                ScrollTextTimer = setInterval(TextScroll, 1000);
+
+            }, false);
+        }
+
+        function loadbody() {
+            
+            prepareScroll();
+            StartScrollingText();
+        }
+
+    </script>
+
+
+</head>
+
+<body onload="loadbody()">
+
+    <div id="side_bar_container">
+
+        <div id="side_bar">
+            <p class="label_text"> Home </p>
+            <div class="button" id="progress_blob1" onclick="ScrollToPage(0)">
+            </div>
+            <div class="divider" id="divider1"></div>
+            <p class="label_text"> What do we do? </p>
+            <div class="button" id="progress_blob2" onclick="ScrollToPage(1)">
+            </div>
+            <div class="divider" id="divider2"></div>
+            <p class="label_text"> U.S Universities </p>
+            <div class="button" id="progress_blob3" onclick="ScrollToPage(2)">
+            </div>
+            <div class="divider" id="divider3"></div>
+            <p class="label_text"> Application Timeline </p>
+            <div class="button" id="progress_blob4" onclick="ScrollToPage(3)">
+            </div>
+            <div class="divider" id="divider4"></div>
+            <p class="label_text"> Contact us </p>
+            <div class="button" id="progress_blob5" onclick="ScrollToPage(4)">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="test_color1">
+        <div id="top_bar">
+            <div id="logo_container">
+                <img id="main_logo" src="Logo/Logo_Blue.svg" />
+            </div>
+            <div id="login">
+                <button onclick="window.location.href = 'https://www.uksa.app/login/';" id="login_button">Login/Register</button>
+            </div>
+        </div>
+
+
+        <!--
+        <h2 class="header_text" id="main_header"> We help you get into your dream school</h2>
+    -->
+
+        <div id="scroll_text_container">
+            <h2 id="hidden_top_word" class="scroll_text">Columbia</h2>
+            <h2 id="top_word" class="scroll_text">Harvard</h2>
+            <h2 id="sentence_starter" class="scroll_text">Get Into</h2>
+            <h2 id="middle_word" class="scroll_text">Duke</h2>
+            <h2 id="bottom_word" class="scroll_text">Princeton</h2>
+            <h2 id="hidden_bottom_word" class="scroll_text">Yale</h2>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!--
+
+            <div id="scroll_text_container">
+        <div id="scroll_text_container_part1">
+            <h2 class="scroll_text">We help you make competitive U.S </h2>
+        </div>
+        <div id="scroll_text_container_part2">
+            <h2 class="scroll_text">university applications</h2>
+        </div>
+        <div id="curved_edge">
+            <div id="background_color"></div>
+        </div>
+    </div>
+
+    -->
+
+
+
+
+
+
+    </div>
+
+    <div id="test_color2"></div>
+
+    <div id="test_color3"></div>
+
+    <div id="test_color4"></div>
+
+    <div id="test_color5"></div>
+
+    <!--
+
+
+    <div class="cookie_form">
+        <p>Hi, this website uses cookies and local storage so that we can provide you with the best user experience and relevant information. To read more, <a href="cookiepolicy.html"> see our cookie policy</a>.</p>
+        <button onclick="cookiesAccepted()">Yes, I accept</button>
+    </div>
+
+    -->
+
+</body>
+
+
+
+</html>

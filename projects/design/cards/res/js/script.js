@@ -1,0 +1,1 @@
+﻿jQuery(".card-number").fitText(0.38);

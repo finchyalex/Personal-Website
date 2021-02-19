@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html id="html">
+<head>
+    <meta charset="utf-8" />
+    <title>Alex Finch - Programmer</title>
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+    <link href="../console/css/index.css" rel="stylesheet" />
+    <script src="../console/js/index.js"></script>
+</head>
+<body onload="LoadFunctions()">
+
+    <div id="GUI">
+        <div id="navbar">
+            <h1>alexfinch.org</h1>
+        </div>
+        <!-- Make interactive GUI -->
+    </div>
+    <div id="command_prompt">
+        <button onclick="ToggleConsole()" id="toggleconsole_btn">Hide</button>
+        <div id="command_prompt_output">
+            <p>Welcome to alexfinch.org</p>
+            <p>> Time is <span id="datetime"> [11:28 GMT] </span></p>
+            <p>> Date is <span id="datedmy"> [01/09/2019] </span> </p>
+            <p>> -----------------</p>
+        </div>
+        <p id="input_tag">> Would you to initialize the GUI? Y/N:  <span id="input"></span></p>
+    </div>
+    <div id="project_viewer">
+    </div>
+</body>
+</html>

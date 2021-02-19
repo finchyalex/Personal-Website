@@ -1,0 +1,22 @@
+﻿body {
+    font-family: Roboto;
+    text-align: center;
+}
+
+#home_btn {
+    font-family: Roboto;
+    border: none;
+    background-color: white;
+    border: 1px solid black;
+    width: 150px;
+    height: 60px;
+    font-size: 20px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    outline: none;
+}
+
+#home_btn:hover {
+    background-color: black;
+    color: white;
+}

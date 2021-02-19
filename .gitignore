@@ -1,0 +1,7 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Java template
+# PHP Files
+*.php
+*.config
+*.cfg
+.htacess

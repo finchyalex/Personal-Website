@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Socialty - Register</title>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,400,500,600,900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link href="https://www.alexfinch.org/projects/socialty/res/css/index.css" rel="stylesheet" />
+    
+
+</head>
+<body>
+    <div class="usercontentbox">
+        <div class="registercontent">
+            <form action="#" method="POST" id="registerform">
+                <div id="nameinfo" class="registertab">
+                    <h1 class="logoheader">Socialty</h1>
+                    <p class="formheader">Hi! What's your name?</p>
+                    <input name="firstname" class="registerinput nameinput" placeholder="First" type="text" />
+                    <p class="formicon_med">+</p>
+                    <input name="surname" class="registerinput nameinput" placeholder="Second" type="text" />
+                    <button disabled class="styledbutton continuebutton">Continue</button>
+                </div>
+                <div id="birthinfo" class="registertab">
+                    <h1 class="logoheader">Socialty</h1>
+                    <p class="formheader">Now, your birthday: </p>
+                    <input name="dob" class="registerinput nameinput" placeholder="00/00/0000" type="date" />
+                    <button disabled class="styledbutton continuebutton">Continue</button>
+                </div>
+                <div id="contactinfo" class="registertab">
+                    <h1 class="logoheader">Socialty</h1>
+                    <p class="formheader">Verification: Email or Phone</p>
+                    <input class="registerinput nameinput" placeholder="Phone" type="tel" />
+                    <p class="formicon_med">or</p>
+                    <input name="email" class="registerinput nameinput" placeholder="Email" type="email" />
+                    <button disabled class="styledbutton continuebutton">Continue</button>
+                </div>
+                <div id="profileinfo" class="registertab">
+                    <h1 class="logoheader">Socialty</h1>
+                    <p class="formheader">Great! Let's set up a profile</p>
+                    
+                    <div id="profile_photo">
+                        <p id="upload_text">Upload</p>
+                        <img id="reg_profile_display" src="../../res/images/default_profile.svg" />
+                    </div>
+                    <input name="username" class="registerinput nameinput" placeholder="Username" type="text" />
+                    <button disabled class="styledbutton continuebutton">Continue</button>
+                </div>
+                <div id="passwordinfo" class="registertab">
+                    <h1 class="logoheader">Socialty</h1>
+                    <p class="formheader">Time to create a secure password</p>
+                    <input name="password" class="registerinput nameinput" placeholder="Password" type="password" />
+                    <p class="formicon_med">&</p>
+                    <input name="confirmpassword" class="registerinput nameinput" placeholder="Confirm" type="password" />
+                    <div id="passwordChecklist">
+                        <p id="passwordTitle">Now to make sure its secure</p>
+                        <div class="line"><div class="checkbox" id="capital"></div><p>A capital letter</p></div>
+                        <div class="line"><div class="checkbox" id="number"></div><p>A number</p></div>
+                        <div class="line"><div class="checkbox" id="length"></div><p>Minimum 8 characters</p></div>
+                        <div class="line"><div class="checkbox" id="character"></div><p>A special character</p></div>
+                        <div class="line"><div class="checkbox" id="match"></div><p>Passwords match</p></div>
+                    </div>
+                    <input name="registeraccount" id="registeraction" disabled type="hidden">
+                    <button disabled id="registerbutton" class="styledbutton continuebutton">
+                        Finish Registration
+                    </button>
+                    <p id="registerresponse" class="formresponse">Response</p>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="../../res/js/main.js"></script>
+    <script src="../../res/js/postqueuing.js"></script>
+</body>
+</html>
