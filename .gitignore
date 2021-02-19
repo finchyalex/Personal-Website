@@ -2,7 +2,10 @@
 ### Java template
 # PHP Files
 *.php
+php.ini
 *.config
 *.cfg
-.htacess
+.htaccess
 /logs
+/.vscode
+googlee3a63275485838de.html
